@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WelcomeSceneButtonsScripts : MonoBehaviour
 {
@@ -6,8 +7,7 @@ public class WelcomeSceneButtonsScripts : MonoBehaviour
     
     public void PlayGame()
     {
-        // SceneManager.LoadScene("GameScene");
-        Debug.Log("Start");
+        SceneManager.LoadScene("IntroductionScene");
     }
     
     public void UpdateCreditsPanel()
@@ -19,7 +19,6 @@ public class WelcomeSceneButtonsScripts : MonoBehaviour
     {
         creditsPanel.SetActive(false);
     }
-
     
     public void QuitGame()
     {

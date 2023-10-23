@@ -4,20 +4,13 @@ public class CheckSystem : MonoBehaviour
 {
     void Start()
     {
-        string gpuName = SystemInfo.graphicsDeviceName;
-        DataToDBDTO.GraphicsCard = gpuName;
-        string processorName = SystemInfo.processorType;
-        int countOfProcessors = SystemInfo.processorCount;
-        float memorySize = Mathf.Round((SystemInfo.systemMemorySize / 1024f) * 100f) / 100f; 
-        bool isInternetConnected = Application.internetReachability != NetworkReachability.NotReachable;
-        if (isInternetConnected)
+        DataToDbdto.GraphicsCard = SystemInfo.graphicsDeviceName;
+        DataToDbdto.Processor = SystemInfo.processorType;
+        DataToDbdto.ProcessorCores = SystemInfo.processorCount;
+        DataToDbdto.MemorySize = Mathf.Round((SystemInfo.systemMemorySize / 1024f) * 100f) / 100f; 
+        if (Application.internetReachability != NetworkReachability.NotReachable)
         {
-            NetworkReachability reachability = Application.internetReachability;
-            Debug.Log(reachability);
+            DataToDbdto.InternetConnectionType = Application.internetReachability.ToString();
         }
-        Debug.Log(gpuName);
-        Debug.Log(processorName);
-        Debug.Log(countOfProcessors);
-        Debug.Log(memorySize);
     }
 }

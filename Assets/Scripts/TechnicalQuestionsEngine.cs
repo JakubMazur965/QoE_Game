@@ -24,7 +24,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 questionText.text = "Q2: Smooth animation in games is crucial to play comfortably. [The Appeal]";
                 break;
             case 3:
-                questionText.text = "Q3: I always adjusts the graphics settings of my game to achieve optimal performance and graphics quality. [Aesthetics]";
+                questionText.text = "Q3: I always adjust the graphics settings of my game to achieve optimal performance and graphics quality. [Aesthetics]";
                 break;
             case 4:
                 questionText.text = "Q4: I prefer games with a minimalist visual style rather than those with extensive 3D graphics. [Aesthetics]";
@@ -36,7 +36,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 questionText.text = "Q6: I always use advanced graphics settings in games, such as ray tracing. [The Appeal]";
                 break;
             case 7:
-                questionText.text = "Q7: Are you interested in screen resolution in games? [Aesthetics]";
+                questionText.text = "Q7: I pay attention to screen resolution in games. [Aesthetics]";
                 break;
             case 8:
                 questionText.text = "Q8: Consistent and high frames per second (FPS) rates are very important in games. [Interaction Quality]";
@@ -45,7 +45,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 questionText.text = "Q9: Playing at 30 frames per second (FPS) is not a problem for me. [Interaction Quality]";
                 break;
             case 10:
-                questionText.text = "Q10: Do you prefer games with advanced lighting effects such as HDR or weather effects? [The Appeal] [Aesthetics]";
+                questionText.text = "Q10: I prefer games with advanced lighting effects such as HDR or weather effects. [The Appeal] [Aesthetics]";
                 break;
             case 11:
                 questionText.text = "Q11: The quality of sound and soundtrack is really important in games. [The Appeal]";

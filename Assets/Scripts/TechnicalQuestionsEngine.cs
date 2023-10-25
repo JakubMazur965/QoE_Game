@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +6,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
 
     [SerializeField] private int questionNumber;
     [SerializeField] private TMP_Text questionText;
+    [SerializeField] private GameObject nextButton;
     
     void Start()
     {
@@ -65,6 +63,8 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 questionText.text = "Q15: There is a big difference when playing at 120 frames per second (FPS) compared to playing at 60 frames per second (FPS). [Interaction Quality]";
                 break;
             case 16:
+                questionText.text = "";
+                nextButton.SetActive(true);
                 break;
         }
     }
@@ -75,88 +75,273 @@ public class TechnicalQuestionsEngine : MonoBehaviour
         {
             case 1:
                 GamesCategoryPointsHelper.AddPoints(5, 3, 3, 1, 5, 5, 5, 5, 3);
-                questionNumber++;
                 break;
             case 2:
                 GamesCategoryPointsHelper.AddPoints(5, 3, 5, 4, 5, 2, 3, 4, 3);
-                questionNumber++;
                 break;
             case 3:
                 GamesCategoryPointsHelper.AddPoints(3, 0, 5, 0, 5, 1, -3, 3, 3);
-                questionNumber++;
                 break;
             case 4:
                 GamesCategoryPointsHelper.AddPoints(-1, 5, -2, 4, -5, -5, 4, -5, 2);
-                questionNumber++;
                 break;
             case 5:
                 GamesCategoryPointsHelper.AddPoints(4, 5, 5,5, 3,4,2,5,1);
-                questionNumber++;
                 break;
             case 6:
                 GamesCategoryPointsHelper.AddPoints(3,-2,3,-3,5,3,0,5,0);
-                questionNumber++;
                 break;
             case 7:
                 GamesCategoryPointsHelper.AddPoints(1,-3,5,1,3,4,-3,4,0);
-                questionNumber++;
                 break;
             case 8:
                 GamesCategoryPointsHelper.AddPoints(0,0,5,4,2,4,0,2,2);
-                questionNumber++;
                 break;
             case 9:
                 GamesCategoryPointsHelper.AddPoints(5,5,-5,-3,-2,-4,5,-2,4);
-                questionNumber++;
                 break;
             case 10:
                 GamesCategoryPointsHelper.AddPoints(3,-3,-2,-5,5,-3,-5,5,4);
-                questionNumber++;
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(4,5,3,0,5,2,5,4,5);
-                questionNumber++;
                 break;
             case 12:
                 GamesCategoryPointsHelper.AddPoints(-2,-2,5,4,-5,5,2,-5,-2);
-                questionNumber++;
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(-4,-4,5,4,-5,5,-3,-4,-4);
-                questionNumber++;
                 break;
             case 14:
                 GamesCategoryPointsHelper.AddPoints(-2,0,5,5,-3,5,-3,3,1);
-                questionNumber++;
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(-3,-4,5,5,0,4,1,3,2);
-                questionNumber++;
-                break;
-            case 16:
-                GamesCategoryPointsHelper.GetDebugLogOfMap();
                 break;
         }
+        questionNumber++;
     }
     
     public void AgreeButton()
     {
+        switch (questionNumber)
+        {
+            case 1:
+                GamesCategoryPointsHelper.AddPoints(3,2,2,2,3,3,3,3,2);
+                break;
+            case 2:
+                GamesCategoryPointsHelper.AddPoints(3,2,3,2,1,3,2,2,2);
+                break;
+            case 3:
+                GamesCategoryPointsHelper.AddPoints(3,0,3,0,4,1,-1,1,2);
+                break;
+            case 4:
+                GamesCategoryPointsHelper.AddPoints(0,3,-1,2,-4,-3,3,-4,1);
+                break;
+            case 5:
+                GamesCategoryPointsHelper.AddPoints(3,3,2,3,3,2,2,3,1);
+                break;
+            case 6:
+                GamesCategoryPointsHelper.AddPoints(2,0,2,-1,3,2,0,3,1);
+                break;
+            case 7:
+                GamesCategoryPointsHelper.AddPoints(2,0,3,2,2,2,0,3,1);
+                break;
+            case 8:
+                GamesCategoryPointsHelper.AddPoints(1,1,3,2,1,2,1,1,1);
+                break;
+            case 9:
+                GamesCategoryPointsHelper.AddPoints(3,4,-3,-1,-1,-2,4,-1,2);
+                break;
+            case 10:
+                GamesCategoryPointsHelper.AddPoints(2,-1,-1,-2,3,-1,-4,3,2);
+                break;
+            case 11:
+                GamesCategoryPointsHelper.AddPoints(2,3,2,1,2,2,3,2,3);
+                break;
+            case 12:
+                GamesCategoryPointsHelper.AddPoints(-1,-1,3,2,-3,3,3,-3,-1);
+                break;
+            case 13:
+                GamesCategoryPointsHelper.AddPoints(-2,-2,2,2,-3,3,-1,-1,-2);
+                break;
+            case 14:
+                GamesCategoryPointsHelper.AddPoints(0,1,2,3,-1,3,0,2,2);
+                break;
+            case 15:
+                GamesCategoryPointsHelper.AddPoints(1,0,-1,-1,2,0,3,1,1);
+                break;
+        }
         questionNumber++;
     }
     
     public void NeutralButton()
     {
+        switch (questionNumber)
+        {
+            case 1:
+                GamesCategoryPointsHelper.AddPoints(-1,1,1,3,0,0,3,-1,1);
+                break;
+            case 2:
+                GamesCategoryPointsHelper.AddPoints(0,1,0,-1,0,-3,2,1,1);
+                break;
+            case 3:
+                GamesCategoryPointsHelper.AddPoints(3,3,0,1,1,1,1,0,1);
+                break;
+            case 4:
+                GamesCategoryPointsHelper.AddPoints(1,0,1,1,-2,-1,2,-2,1);
+                break;
+            case 5:
+                GamesCategoryPointsHelper.AddPoints(2,2,0,0,2,0,3,0,0);
+                break;
+            case 6:
+                GamesCategoryPointsHelper.AddPoints(2,1,1,1,0,2,2,0,1);
+                break;
+            case 7:
+                GamesCategoryPointsHelper.AddPoints(2,2,0,2,1,0,4,0,2);
+                break;
+            case 8:
+                GamesCategoryPointsHelper.AddPoints(2,2,-1,0,0,0,3,0,0);
+                break;
+            case 9:
+                GamesCategoryPointsHelper.AddPoints(1,3,-1,0,0,-1,2,0,1);
+                break;
+            case 10:
+                GamesCategoryPointsHelper.AddPoints(1,1,0,0,-1,1,3,0,1);
+                break;
+            case 11:
+                GamesCategoryPointsHelper.AddPoints(1,0,1,2,0,1,2,0,0);
+                break;
+            case 12:
+                GamesCategoryPointsHelper.AddPoints(1,1,-2,0,-1,-1,4,0,1);
+                break;
+            case 13:
+                GamesCategoryPointsHelper.AddPoints(0,1,-3,-1,0,-1,1,0,0);
+                break;
+            case 14:
+                GamesCategoryPointsHelper.AddPoints(1,2,0,0,0,-1,3,1,3);
+                break;
+            case 15:
+                GamesCategoryPointsHelper.AddPoints(1,0,-1,-1,2,0,3,1,1);
+                break;
+        }
         questionNumber++;
     }
     
     public void DisagreeButton()
     {
+        switch (questionNumber)
+        {
+            case 1:
+                GamesCategoryPointsHelper.AddPoints(-3,3,1,4,-1,-3,0,-3,0);
+                break;
+            case 2:
+                GamesCategoryPointsHelper.AddPoints(-3,2,-3,-2,-1,-4,0,0,-1);
+                break;
+            case 3:
+                GamesCategoryPointsHelper.AddPoints(1,4,-3,2,-2,0,3,-1,0);
+                break;
+            case 4:
+                GamesCategoryPointsHelper.AddPoints(2,-3,2,-1,2,3,1,2,1);
+                break;
+            case 5:
+                GamesCategoryPointsHelper.AddPoints(0,-1,-2,-3,2,-2,3,-1,1);
+                break;
+            case 6:
+                GamesCategoryPointsHelper.AddPoints(1,3,0,3,-2,2,3,-2,2);
+                break;
+            case 7:
+                GamesCategoryPointsHelper.AddPoints(3,4,-2,3,0,-1,4,-2,2);
+                break;
+            case 8:
+                GamesCategoryPointsHelper.AddPoints(3,3,-3,-2,-1,-2,4,-1,-1);
+                break;
+            case 9:
+                GamesCategoryPointsHelper.AddPoints(0,0,2,1,1,0,-1,1,0);
+                break;
+            case 10:
+                GamesCategoryPointsHelper.AddPoints(0,3,2,4,-3,2,4,-3,0);
+                break;
+            case 11:
+                GamesCategoryPointsHelper.AddPoints(-1,-3,0,3,-2,1,0,-1,-3);
+                break;
+            case 12:
+                GamesCategoryPointsHelper.AddPoints(2,2,-4,-1,3,-3,3,3,3);
+                break;
+            case 13:
+                GamesCategoryPointsHelper.AddPoints(3,3,-4,-2,3,-3,3,2,2);
+                break;
+            case 14:
+                GamesCategoryPointsHelper.AddPoints(2,3,-2,-2,1,-2,4,0,3);
+                break;
+            case 15:
+                GamesCategoryPointsHelper.AddPoints(3,3,-2,-3,3,-1,4,0,1);
+                break;
+        }
         questionNumber++;
     }
     
     public void StrongDisagreeButton()
     {
+        switch (questionNumber)
+        {
+            case 1:
+                GamesCategoryPointsHelper.AddPoints(-5,5,1,5,-2,-5,0,-5,0);
+                break;
+            case 2:
+                GamesCategoryPointsHelper.AddPoints(-5,3,-5,-3,-2,-5,-2,-2,-3);
+                break;
+            case 3:
+                GamesCategoryPointsHelper.AddPoints(0,5,-5,3,-5,0,5,-3,-1);
+                break;
+            case 4:
+                GamesCategoryPointsHelper.AddPoints(4,-5,4,-2,5,5,0,5,2);
+                break;
+            case 5:
+                GamesCategoryPointsHelper.AddPoints(-2,-3,-5,-4,1,-4,4,-2,1);
+                break;
+            case 6:
+                GamesCategoryPointsHelper.AddPoints(0,5,-1,5,-4,1,4,-4,2);
+                break;
+            case 7:
+                GamesCategoryPointsHelper.AddPoints(4,5,-4,4,-1,-2,5,-3,3);
+                break;
+            case 8:
+                GamesCategoryPointsHelper.AddPoints(3,3,-5,-4,-2,-4,5,-2,-2);
+                break;
+            case 9:
+                GamesCategoryPointsHelper.AddPoints(-2,-1,5,3,2,4,-3,2,-2);
+                break;
+            case 10:
+                GamesCategoryPointsHelper.AddPoints(-2,4,3,5,-5,3,5,-5,-1);
+                break;
+            case 11:
+                GamesCategoryPointsHelper.AddPoints(-2,-5,-1,4,-4,0,-2,-3,-5);
+                break;
+            case 12:
+                GamesCategoryPointsHelper.AddPoints(4,4,-5,-3,5,-5,2,5,5);
+                break;
+            case 13:
+                GamesCategoryPointsHelper.AddPoints(5,5,-5,-4,5,-5,5,4,4);
+                break;
+            case 14:
+                GamesCategoryPointsHelper.AddPoints(4,4,-5,-4,3,-4,5,-2,4);
+                break;
+            case 15:
+                GamesCategoryPointsHelper.AddPoints(4,5,-5,-5,4,-2,5,0,0);
+                break;
+        }
         questionNumber++;
+    }
+    
+    public void Next()
+    {
+        GamesCategoryPointsHelper.ShowPointsMap();
+    }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
     }
     
 }

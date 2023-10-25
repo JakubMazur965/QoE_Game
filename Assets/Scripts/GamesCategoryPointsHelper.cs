@@ -33,20 +33,20 @@ public class GamesCategoryPointsHelper : MonoBehaviour
     {
         var categoriesPointMap = new Dictionary<string, int>
         {
-            { "SimulationAndSandbox", SimulationAndSandbox },
-            { "RealTimeStrategyAndStrategy", RealTimeStrategyAndStrategy },
-            { "Shooters", Shooters },
-            { "MultiplayerOnlineBattleArena", MultiplayerOnlineBattleArena },
-            { "RolePlayingGame", RolePlayingGame },
-            { "SportsAndCombatAndRacing", SportsAndCombatAndRacing },
-            { "PartyGamesAndPuzzles", PartyGamesAndPuzzles },
-            { "ActionAndAdventure", ActionAndAdventure },
-            { "SurvivalAndHorror", SurvivalAndHorror }
+            { "Simulation and Sandbox", SimulationAndSandbox },
+            { "Real-time strategy (RTS) and Strategy", RealTimeStrategyAndStrategy },
+            { "Shooters (FPS and TPS)", Shooters },
+            { "Multiplayer online battle arena (MOBA)", MultiplayerOnlineBattleArena },
+            { "Role-playing (RPG, ARPG)", RolePlayingGame },
+            { "Sports, Combat and Racing", SportsAndCombatAndRacing },
+            { "Party Games, Puzzles", PartyGamesAndPuzzles },
+            { "Action-adventure", ActionAndAdventure },
+            { "Survival and horror", SurvivalAndHorror }
         };
         return categoriesPointMap;
     }
 
-    public static void GetDebugLogOfMap()
+    public static void ShowPointsMap()
     {
         var categoriesPointMap = GetCategoriesPointMap();
         foreach (var kvp in categoriesPointMap)

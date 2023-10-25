@@ -15,6 +15,7 @@ public class UserDataButtonsAndInputsHelper : MonoBehaviour
     [SerializeField] private TMP_InputField gameExperienceInputField;
     [SerializeField] private TMP_Dropdown gameFrequencyDropdown;
     [SerializeField] private TMP_Dropdown glassesDropdown;
+    [SerializeField] private GameObject nextButton;
     
     private const string ValidCharacters = "0123456789";
 
@@ -26,6 +27,14 @@ public class UserDataButtonsAndInputsHelper : MonoBehaviour
         DataToDbdto.GameFrequency = gameFrequencyDropdown.options[0].text;
         DataToDbdto.Glasses = glassesDropdown.options[0].text;
         DataToDbdto.GameDevice = gameDeviceDropdown.options[0].text;
+    }
+
+    private void Update()
+    {
+        if (DataToDbdto.Name != "" && DataToDbdto.Surname != "" && DataToDbdto.Age != 0)
+        {
+            nextButton.SetActive(true);
+        }
     }
 
     public void InputNameProcess()

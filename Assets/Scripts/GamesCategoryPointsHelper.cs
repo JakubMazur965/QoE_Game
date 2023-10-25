@@ -45,4 +45,14 @@ public class GamesCategoryPointsHelper : MonoBehaviour
         };
         return categoriesPointMap;
     }
+
+    public static void GetDebugLogOfMap()
+    {
+        var categoriesPointMap = GetCategoriesPointMap();
+        foreach (var kvp in categoriesPointMap)
+        {
+            Debug.Log("Klucz: " + kvp.Key + ", Wartość: " + kvp.Value);
+        }
+    }
+    
 }

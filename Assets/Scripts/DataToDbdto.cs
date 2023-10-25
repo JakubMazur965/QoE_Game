@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DataToDbdto : MonoBehaviour
@@ -7,9 +5,11 @@ public class DataToDbdto : MonoBehaviour
     public static string Name;
     public static string Surname;
     public static int Age;
+    public static string Gender;
+    public static string GameDevice;
     public static string GameExperience;
     public static string GameFrequency;
-    public static string GameDevice;
+    public static string Glasses;
     public static string Processor;
     public static int ProcessorCores;
     public static string GraphicsCard;

@@ -3,7 +3,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class UserDataButtonsAndInputsHelper : MonoBehaviour
 {
@@ -82,6 +81,21 @@ public class UserDataButtonsAndInputsHelper : MonoBehaviour
     
     public void Next()
     {
+        switch (DataToDbdto.GameDevice)
+        {
+            case "PC":
+                GamesCategoryPointsHelper.AddPoints(5,5,5,5,5,2,0,3,5);
+                break;
+            case "Console":
+                GamesCategoryPointsHelper.AddPoints(0,-3,3,-3,5,5,0,5,3);
+                break;
+            case "Phone":
+                GamesCategoryPointsHelper.AddPoints(2,2,0,3,-5,2,5,-5,2);
+                break;
+            case "None":
+                GamesCategoryPointsHelper.AddPoints(2,0,0,0,0,0,5,0,0);
+                break;
+        }
         SceneManager.LoadScene("TechnicalQuestions");
     }
     

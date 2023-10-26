@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TechnicalQuestions.unity
     guid: 57408e658c0f3224ea681c6a074c0fff
+  - enabled: 1
+    path: Assets/Scenes/PersonalPreferencesScene.unity
+    guid: fb23e7e1af8588a46be98c81d2edfe96
   m_configObjects: {}

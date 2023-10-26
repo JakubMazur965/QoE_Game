@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TechnicalQuestionsEngine : MonoBehaviour
 {
@@ -336,7 +337,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
     
     public void Next()
     {
-        GamesCategoryPointsHelper.ShowPointsMap();
+        SceneManager.LoadScene("PersonalPreferencesScene");
     }
     
     public void QuitGame()

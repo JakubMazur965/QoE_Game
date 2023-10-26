@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PersonalPreferencesScene.unity
     guid: fb23e7e1af8588a46be98c81d2edfe96
+  - enabled: 1
+    path: Assets/Scenes/PracticalPartIntroduction.unity
+    guid: 60e59b763fec1764690baf9862641f1f
+  - enabled: 1
+    path: Assets/Scenes/ResponseTimeScene.unity
+    guid: 7356ecf8451308447b20c3c0836d3e6c
   m_configObjects: {}

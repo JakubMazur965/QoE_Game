@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PeronalPreferencesEngine : MonoBehaviour
 {
@@ -73,7 +74,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
         switch (questionNumber)
         {
             case 1:
-                GamesCategoryPointsHelper.AddPoints(4,5,-5,-4,5,-3,-5,-3,3);
+                GamesCategoryPointsHelper.AddPoints(4,5,-5,4,5,-3,-5,-3,3);
                 break;
             case 2:
                 GamesCategoryPointsHelper.AddPoints(-5,-4,-2,-5,5,-5,-3,5,4);
@@ -126,7 +127,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
         switch (questionNumber)
         {
             case 1:
-                GamesCategoryPointsHelper.AddPoints(2,4,-3,-2,3,-1,-3,-2,2);
+                GamesCategoryPointsHelper.AddPoints(2,4,-3,2,3,-1,-3,-2,2);
                 break;
             case 2:
                 GamesCategoryPointsHelper.AddPoints(-4,-2,-1,-4,3,-4,-1,3,3);
@@ -232,7 +233,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
         switch (questionNumber)
         {
             case 1:
-                GamesCategoryPointsHelper.AddPoints(-2,-4,3,2,-3,1,2,2,0);
+                GamesCategoryPointsHelper.AddPoints(-2,-4,3,-2,-3,1,2,2,0);
                 break;
             case 2:
                 GamesCategoryPointsHelper.AddPoints(4,3,2,3,-4,4,3,-4,2);
@@ -285,7 +286,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
         switch (questionNumber)
         {
             case 1:
-                GamesCategoryPointsHelper.AddPoints(-4,-5,5,4,-4,3,5,5,-1);
+                GamesCategoryPointsHelper.AddPoints(-4,-5,5,-4,-4,3,5,5,-1);
                 break;
             case 2:
                 GamesCategoryPointsHelper.AddPoints(5,5,4,5,-5,5,5,-5,0);
@@ -335,7 +336,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
     
     public void Next()
     {
-        GamesCategoryPointsHelper.ShowPointsMap();
+        SceneManager.LoadScene("PracticalPartIntroduction");
     }
     
     public void QuitGame()

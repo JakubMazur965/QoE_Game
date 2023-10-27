@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ResponseTimeMOS.unity
     guid: f71e3a310846edb42be70665f805240f
+  - enabled: 1
+    path: Assets/Scenes/MemorizingLevel.unity
+    guid: 8c04dfb7c72c40344873ecce067f4c67
   m_configObjects: {}

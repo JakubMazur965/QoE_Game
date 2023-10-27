@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ResponseTimeEngine : MonoBehaviour
 {
-    [SerializeField] private GameObject titleTextGameObjet;
-    [SerializeField] private TMP_Text titleText;
+    [SerializeField] private GameObject descriptionTextGameObjet;
+    [SerializeField] private TMP_Text descriptionText;
     [SerializeField] private GameObject buttonStart;
     [SerializeField] private GameObject buttonExit;
     [SerializeField] private GameObject responseTimeButton;
@@ -29,7 +29,7 @@ public class ResponseTimeEngine : MonoBehaviour
         _totalReactionTime = 0f;
         _responseTimeTextCore = responseTimeText.text;
         
-        titleTextGameObjet.SetActive(true);
+        descriptionTextGameObjet.SetActive(true);
         buttonStart.SetActive(true);
         buttonExit.SetActive(true);
         responseTimeButton.SetActive(false);
@@ -39,7 +39,7 @@ public class ResponseTimeEngine : MonoBehaviour
 
     public void StartGame()
     {
-        titleTextGameObjet.SetActive(false);
+        descriptionTextGameObjet.SetActive(false);
         buttonStart.SetActive(false);
         buttonExit.SetActive(false);
         responseTimeButton.SetActive(true);
@@ -109,8 +109,8 @@ public class ResponseTimeEngine : MonoBehaviour
                         break;
                 }
                 
-                titleText.text = "Average response time: " + averageReactionTime.ToString("F2") + " [s]";
-                titleTextGameObjet.SetActive(true);
+                descriptionText.text = "Average response time: " + averageReactionTime.ToString("F2") + " [s]";
+                descriptionTextGameObjet.SetActive(true);
                 nextButton.SetActive(true);
                 buttonExit.SetActive(true);
                 responseTimeButton.SetActive(false);

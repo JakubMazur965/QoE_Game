@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class MemorizingLevelEngine : MonoBehaviour
 {
@@ -115,27 +114,28 @@ public class MemorizingLevelEngine : MonoBehaviour
 
     public void NextButtonOnClick()
     {
+        _currentSequenceIndex--;
         DataToDbdto.LvlMemorizingResult = _currentSequenceIndex;
 
         if (_currentSequenceIndex <= 5)
         {
-            GamesCategoryPointsHelper.AddPoints(-3,-3,-1,-2,-2,-1,-2,-1,-1);
+            GamesCategoryPointsHelper.AddPoints(-3,-4,-1,-2,-2,-1,-3,-1,-1);
         }
         else if (_currentSequenceIndex == 6 || _currentSequenceIndex == 7)
         {
-            GamesCategoryPointsHelper.AddPoints(-1,-1,0,-1,-1,0,-1,0,0);
+            GamesCategoryPointsHelper.AddPoints(-1,-2,0,-1,-1,0,-1,0,0);
         }
         else if (_currentSequenceIndex == 8)
         {
-            GamesCategoryPointsHelper.AddPoints(1,1,1,1,1,1,1,1,1);
+            GamesCategoryPointsHelper.AddPoints(1,0,0,1,1,0,1,1,1);
         }
         else if (_currentSequenceIndex == 9)
         {
-            GamesCategoryPointsHelper.AddPoints(3,3,1,2,2,1,2,1,1);
+            GamesCategoryPointsHelper.AddPoints(2,3,1,2,2,1,2,2,2);
         }
         else if (_currentSequenceIndex >= 10)
         {
-            GamesCategoryPointsHelper.AddPoints(5,5,2,3,3,2,3,2,2);
+            GamesCategoryPointsHelper.AddPoints(4,5,1,3,3,1,4,3,3);
         }
         
         GamesCategoryPointsHelper.ShowPointsMap();

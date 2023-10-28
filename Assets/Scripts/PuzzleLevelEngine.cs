@@ -67,7 +67,7 @@ public class PuzzleLevelEngine : MonoBehaviour
 
         infoText.text = 
             "To all things and men I appertain, and yet by some am shunned and distained. " +
-            "Fondle me and ogle me til you're insane,but no blow can harm me, cause me pain. " +
+            "Fondle me and ogle me til you're insane, but no blow can harm me, cause me pain. " +
             "Children delight in me, elders take fright. Fair maids rejoice and spin. Cry and I weep, " +
             "yawn and I sleep. Smile, and I shal grin.";
 

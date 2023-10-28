@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MemorizingLevel.unity
     guid: 8c04dfb7c72c40344873ecce067f4c67
+  - enabled: 1
+    path: Assets/Scenes/MemorizingLevelMOS.unity
+    guid: 1765abb9b85182b49a9ca3d4fd021a74
+  - enabled: 1
+    path: Assets/Scenes/AimLevel.unity
+    guid: 04d42f7d8bc070443ac7c077dd4e5fa8
+  - enabled: 1
+    path: Assets/Scenes/AimLevelMOS.unity
+    guid: 56d04c4f019b3824fbe062827837987f
+  - enabled: 1
+    path: Assets/Scenes/PuzzleLevel.unity
+    guid: 8fcf6c1bd43c5264da8897d931243c12
   m_configObjects: {}

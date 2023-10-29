@@ -23,8 +23,8 @@ public class DataToDbdto : MonoBehaviour
     public static int LvlMemorizingMos;
     public static float LvlAimTime;
     public static int LvlAimMos;
-    public static float LvlLogicTime;
-    public static int LvlLogicMos;
+    public static float LvlPuzzleTime;
+    public static int LvlPuzzleMos;
     public static string SystemRecommendation;
     public static int SystemRecommendationMos;
     public static int WholeGameMos;

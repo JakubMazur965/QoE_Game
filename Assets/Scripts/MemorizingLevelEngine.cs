@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MemorizingLevelEngine : MonoBehaviour
 {
@@ -137,8 +138,8 @@ public class MemorizingLevelEngine : MonoBehaviour
         {
             GamesCategoryPointsHelper.AddPoints(4,5,1,3,3,1,4,3,3);
         }
-        
-        GamesCategoryPointsHelper.ShowPointsMap();
+
+        SceneManager.LoadScene("MemorizingLevelMOS");
     }
     
     public void QuitGame()

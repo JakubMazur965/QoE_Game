@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GamesCategoryPointsHelper : MonoBehaviour
@@ -43,7 +44,8 @@ public class GamesCategoryPointsHelper : MonoBehaviour
             { "Action-adventure", ActionAndAdventure },
             { "Survival and horror", SurvivalAndHorror }
         };
-        return categoriesPointMap;
+        
+        return categoriesPointMap.OrderByDescending(pair => pair.Value).ToDictionary(pair => pair.Key, pair => pair.Value);
     }
 
     public static void ShowPointsMap()

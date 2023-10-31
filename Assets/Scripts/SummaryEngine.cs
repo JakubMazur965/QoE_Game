@@ -250,7 +250,44 @@ public class SummaryEngine : MonoBehaviour
 
         foreach (var kvp in _categoriesPointMap)
         {
-            result += kvp.Key + kvp.Value;
+            switch (kvp.Key) 
+            { 
+                case "Simulation and Sandbox":
+                    result += "SimulationAndSandbox:" + kvp.Value + " ";
+                    break;
+            
+                case "Real-time strategy (RTS) and Strategy":
+                    result += "RTSAndStrategy:" + kvp.Value + " ";
+                    break;
+                
+                case "Shooters (FPS and TPS)":
+                    result += "Shooters:" + kvp.Value + " ";
+                    break;
+                
+                case "Multiplayer online battle arena (MOBA)":
+                    result += "MOBA:" + kvp.Value + " ";
+                    break;
+                
+                case "Role-playing (RPG, ARPG)":
+                    result += "RPG:" + kvp.Value + " ";
+                    break;
+                
+                case "Sports, Combat and Racing":
+                    result += "SportsAndCombatAndRacing:" + kvp.Value + " ";
+                    break;
+                
+                case "Party Games, Puzzles":
+                    result += "PartyGamesAndPuzzles:" + kvp.Value + " ";
+                    break;
+                
+                case "Action-Adventure":
+                    result += "Action-Adventure:" + kvp.Value + " ";
+                    break;
+                
+                case "Survival and horror":
+                    result += "SurvivalAndHorror:" + kvp.Value + " ";
+                    break;
+            }
         }
 
         return result;

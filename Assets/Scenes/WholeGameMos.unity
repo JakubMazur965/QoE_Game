@@ -207,8 +207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RecommendationMosEngine, Assembly-CSharp
+      - m_Target: {fileID: 1728320528}
+        m_TargetAssemblyTypeName: WholeGameMosManager, Assembly-CSharp
         m_MethodName: TwoScore
         m_Mode: 1
         m_Arguments:
@@ -476,8 +476,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RecommendationMosEngine, Assembly-CSharp
+      - m_Target: {fileID: 1728320528}
+        m_TargetAssemblyTypeName: WholeGameMosManager, Assembly-CSharp
         m_MethodName: OneScore
         m_Mode: 1
         m_Arguments:
@@ -948,8 +948,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RecommendationMosEngine, Assembly-CSharp
+      - m_Target: {fileID: 1728320528}
+        m_TargetAssemblyTypeName: WholeGameMosManager, Assembly-CSharp
         m_MethodName: FourScore
         m_Mode: 1
         m_Arguments:
@@ -1435,8 +1435,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RecommendationMosEngine, Assembly-CSharp
+      - m_Target: {fileID: 1728320528}
+        m_TargetAssemblyTypeName: WholeGameMosManager, Assembly-CSharp
         m_MethodName: ThreeScore
         m_Mode: 1
         m_Arguments:
@@ -1586,6 +1586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728320527}
+  - component: {fileID: 1728320528}
   m_Layer: 0
   m_Name: WholeGameMosManager
   m_TagString: Untagged
@@ -1608,6 +1609,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1728320528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728320526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ecc2ef39c2df3b4bb5f1d2609cad1c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755208484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,8 +1942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RecommendationMosEngine, Assembly-CSharp
+      - m_Target: {fileID: 1728320528}
+        m_TargetAssemblyTypeName: WholeGameMosManager, Assembly-CSharp
         m_MethodName: FiveScore
         m_Mode: 1
         m_Arguments:

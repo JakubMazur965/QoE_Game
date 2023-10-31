@@ -227,6 +227,8 @@ public class SummaryEngine : MonoBehaviour
         secondImageGameObject.SetActive(false);
         firstImageTextGameObject.SetActive(false);
         secondImageTextGameObject.SetActive(false);
+        secondNextGameObject.SetActive(false);
+        thirdNextGameObject.SetActive(true);
 
         summaryText.text = "";
         foreach (var kvp in _categoriesPointMap.Skip(1))
@@ -248,7 +250,7 @@ public class SummaryEngine : MonoBehaviour
 
         foreach (var kvp in _categoriesPointMap)
         {
-            result += kvp.Key + ": " + kvp.Value + " ";
+            result += kvp.Key + ":" + kvp.Value + ",";
         }
 
         return result;

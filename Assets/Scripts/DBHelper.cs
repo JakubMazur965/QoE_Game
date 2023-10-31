@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DBHelper : MonoBehaviour
 {
-    private string _connectionString;
+    private static string _connectionString;
     
-    void Start()
+    public static void SaveAllDataToDB()
     {
         string server = "mysql.agh.edu.pl";
         int port = 3306;
@@ -14,26 +14,61 @@ public class DBHelper : MonoBehaviour
         string password = "x99YAgt20iYtAP8z";
         string database = "jakubma1";
         
-        // Połączenie z bazą danych
+        // Connection to DataBase
         _connectionString = $"Server={server};Port={port};Database={database};User Id={username};Password={password}";
 
-        // using (MySqlConnection connection = new MySqlConnection(_connectionString))
-        // {
-        //     connection.Open();
-        //
-        //     string insertQuery = "INSERT INTO Data (graphics_card) VALUES (@gpu)";
-        //     MySqlCommand cmd = new MySqlCommand(insertQuery, connection);
-        //     cmd.Parameters.AddWithValue("@gpu", DataToDBDTO.GraphicsCard);
-        //
-        //     try
-        //     {
-        //         cmd.ExecuteNonQuery();
-        //         Debug.Log("Dodano rekord do tabeli Data.");
-        //     }
-        //     catch (Exception e)
-        //     {
-        //         Debug.LogError("Błąd podczas dodawania rekordu: " + e.Message);
-        //     }
-        // }
+        using (MySqlConnection connection = new MySqlConnection(_connectionString))
+        {
+            connection.Open();
+        
+            string insertQuery = "INSERT INTO Data (name, surname, age, game_device, game_experience, game_frequency, " +
+                                 "glasses, processor, processor_cores, graphics_card, memory_size, " +
+                                 "internet_connection_type, internet_speed, internet_delay, lvl_response_avg_time," +
+                                 "lvl_response_mos, lvl_memorizing_result, lvl_memorizing_mos, lvl_aim_time," +
+                                 "lvl_aim_mos, lvl_puzzle_time, lvl_puzzle_mos, system_recommendation, " +
+                                 "system_recommendation_all_data, system_recommendation_mos, whole_game_mos) " +
+                                 "VALUES (@name, @surname, @age, @gameDevice, @gameExperience, @gameFrequency," +
+                                 "@glasses, @processor, @processorCores, @gpu, @memorySize, @intConType, @intSpeed," +
+                                 "@intDelay, @lvlResponseAvgTime, @lvlResponseMos, @lvlMemRes, @lvlMemMos, @lvlAimTime," +
+                                 "@lvlAimMos, @lvlPuzzleTime, @lvlPuzzleMos, @sysRec, @sysRecAllData, @sysRecMos," +
+                                 "@wholeGameMos)";
+            MySqlCommand cmd = new MySqlCommand(insertQuery, connection);
+            cmd.Parameters.AddWithValue("@name", DataToDbdto.Name);
+            cmd.Parameters.AddWithValue("@surname", DataToDbdto.Surname);
+            cmd.Parameters.AddWithValue("@age", DataToDbdto.Age);
+            cmd.Parameters.AddWithValue("@gameDevice", DataToDbdto.GameDevice);
+            cmd.Parameters.AddWithValue("@gameExperience", DataToDbdto.GameExperience);
+            cmd.Parameters.AddWithValue("@gameFrequency", DataToDbdto.GameFrequency);
+            cmd.Parameters.AddWithValue("@glasses", DataToDbdto.Glasses);
+            cmd.Parameters.AddWithValue("@processor", DataToDbdto.Processor);
+            cmd.Parameters.AddWithValue("@processorCores", DataToDbdto.ProcessorCores);
+            cmd.Parameters.AddWithValue("@gpu", DataToDbdto.GraphicsCard);
+            cmd.Parameters.AddWithValue("@memorySize", DataToDbdto.MemorySize);
+            cmd.Parameters.AddWithValue("@intConType", DataToDbdto.InternetConnectionType);
+            cmd.Parameters.AddWithValue("@intSpeed", 0F);
+            cmd.Parameters.AddWithValue("@intDelay", 0F);
+            cmd.Parameters.AddWithValue("@lvlResponseAvgTime", DataToDbdto.LvlResponseAvgTime);
+            cmd.Parameters.AddWithValue("@lvlResponseMos", DataToDbdto.LvlResponseMos);
+            cmd.Parameters.AddWithValue("@lvlMemRes", DataToDbdto.LvlMemorizingResult);
+            cmd.Parameters.AddWithValue("@lvlMemMos", DataToDbdto.LvlMemorizingMos);
+            cmd.Parameters.AddWithValue("@lvlAimTime", DataToDbdto.LvlAimTime);
+            cmd.Parameters.AddWithValue("@lvlAimMos", DataToDbdto.LvlAimMos);
+            cmd.Parameters.AddWithValue("@lvlPuzzleTime", DataToDbdto.LvlPuzzleTime);
+            cmd.Parameters.AddWithValue("@lvlPuzzleMos", DataToDbdto.LvlPuzzleMos);
+            cmd.Parameters.AddWithValue("@sysRec", DataToDbdto.SystemRecommendation);
+            cmd.Parameters.AddWithValue("@sysRecAllData", DataToDbdto.SystemRecommendationAllData);
+            cmd.Parameters.AddWithValue("@sysRecMos", DataToDbdto.SystemRecommendationMos);
+            cmd.Parameters.AddWithValue("@wholeGameMos", DataToDbdto.WholeGameMos);
+        
+            try
+            {
+                cmd.ExecuteNonQuery();
+                Debug.Log("Dodano rekord do tabeli Data.");
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Błąd podczas dodawania rekordu: " + e.Message);
+            }
+        }
     }
 }

@@ -50,4 +50,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Summary.unity
     guid: 55ab58bc5dbc77443be7faa5180b8b80
+  - enabled: 1
+    path: Assets/Scenes/RecommendationMos.unity
+    guid: 68b9154c8c8e4644fa54d447327cbf44
+  - enabled: 1
+    path: Assets/Scenes/WholeGameMos.unity
+    guid: a36cc3ecadbdcc648b0a3a7290d390f9
+  - enabled: 1
+    path: Assets/Scenes/TheEnd.unity
+    guid: dd7a821450e5b724fa4dcfc12645eeb8
   m_configObjects: {}

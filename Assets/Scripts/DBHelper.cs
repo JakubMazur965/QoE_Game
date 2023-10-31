@@ -45,8 +45,8 @@ public class DBHelper : MonoBehaviour
             cmd.Parameters.AddWithValue("@gpu", DataToDbdto.GraphicsCard);
             cmd.Parameters.AddWithValue("@memorySize", DataToDbdto.MemorySize);
             cmd.Parameters.AddWithValue("@intConType", DataToDbdto.InternetConnectionType);
-            cmd.Parameters.AddWithValue("@intSpeed", 0F);
-            cmd.Parameters.AddWithValue("@intDelay", 0F);
+            cmd.Parameters.AddWithValue("@intSpeed", DataToDbdto.InternetSpeed);
+            cmd.Parameters.AddWithValue("@intDelay", DataToDbdto.InternetDelay);
             cmd.Parameters.AddWithValue("@lvlResponseAvgTime", DataToDbdto.LvlResponseAvgTime);
             cmd.Parameters.AddWithValue("@lvlResponseMos", DataToDbdto.LvlResponseMos);
             cmd.Parameters.AddWithValue("@lvlMemRes", DataToDbdto.LvlMemorizingResult);

@@ -250,7 +250,7 @@ public class SummaryEngine : MonoBehaviour
 
         foreach (var kvp in _categoriesPointMap)
         {
-            result += kvp.Key + ":" + kvp.Value + ",";
+            result += kvp.Key + kvp.Value;
         }
 
         return result;

@@ -80,7 +80,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(-5,-2,-2,-5,5,-5,-3,5,4);
                 break;
             case 3:
-                GamesCategoryPointsHelper.AddPoints(3,-5,-3,-5,5,-5,-5,4,-1);
+                GamesCategoryPointsHelper.AddPoints(3,-5,-3,-5,5,-5,-5,4,-2);
                 break;
             case 4:
                 GamesCategoryPointsHelper.AddPoints(-2,-4,-3,-5,5,-5,-5,4,5);
@@ -95,19 +95,19 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(2,5,5,-5,3,-5,-4,-2,3);
                 break;
             case 8:
-                GamesCategoryPointsHelper.AddPoints(-3,-5,-2,-3,3,-2,-2,3,2);
+                GamesCategoryPointsHelper.AddPoints(-3,-5,-2,-3,3,-2,-2,3,3);
                 break;
             case 9:
-                GamesCategoryPointsHelper.AddPoints(-3,-1,5,5,-5,5,5,-4,0);
+                GamesCategoryPointsHelper.AddPoints(-3,-1,5,5,-5,5,5,-4,-1);
                 break;
             case 10:
                 GamesCategoryPointsHelper.AddPoints(-3,-3,3,-1,5,3,4,4,5);
                 break;
             case 11:
-                GamesCategoryPointsHelper.AddPoints(3,5,4,5,-3,5,-4,-5,2);
+                GamesCategoryPointsHelper.AddPoints(3,5,4,5,-3,5,-4,-5,0);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(-3,-5,-4,-5,5,-5,-5,4,-2);
+                GamesCategoryPointsHelper.AddPoints(-3,-5,-4,-5,5,-5,-5,4,-3);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(5,-3,3,3,5,-3,-2,4,5);
@@ -139,10 +139,10 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(-1,-2,-1,-3,4,-3,-4,2,3);
                 break;
             case 5:
-                GamesCategoryPointsHelper.AddPoints(-3,-4,-1,-4,3,-4,-4,4,2);
+                GamesCategoryPointsHelper.AddPoints(-3,-4,-1,-4,3,-4,-4,4,1);
                 break;
             case 6:
-                GamesCategoryPointsHelper.AddPoints(-4,-3,4,3,-1,4,-3,-1,3);
+                GamesCategoryPointsHelper.AddPoints(-4,-3,4,3,-1,4,-3,-1,2);
                 break;
             case 7:
                 GamesCategoryPointsHelper.AddPoints(2,4,3,-3,2,-3,-2,-1,2);
@@ -192,7 +192,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(0,0,1,-1,-3,-1,-1,-1,-2);
                 break;
             case 5:
-                GamesCategoryPointsHelper.AddPoints(-2,-3,-1,-3,-1,-3,-2,-2,1);
+                GamesCategoryPointsHelper.AddPoints(-2,-3,-1,-3,-1,-3,-2,-2,0);
                 break;
             case 6:
                 GamesCategoryPointsHelper.AddPoints(-2,-1,-3,-2,0,-3,-1,0,1);
@@ -245,7 +245,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(2,3,2,3,-4,3,3,-2,-3);
                 break;
             case 5:
-                GamesCategoryPointsHelper.AddPoints(4,4,3,4,-4,4,4,-4,1);
+                GamesCategoryPointsHelper.AddPoints(4,4,3,4,-4,4,4,-4,-1);
                 break;
             case 6:
                 GamesCategoryPointsHelper.AddPoints(4,3,-4,-4,3,-4,4,3,0);

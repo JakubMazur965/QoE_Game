@@ -41,7 +41,7 @@ public class GamesCategoryPointsHelper : MonoBehaviour
             { "Role-playing (RPG, ARPG)", RolePlayingGame },
             { "Sports, Combat and Racing", SportsAndCombatAndRacing },
             { "Party Games, Puzzles", PartyGamesAndPuzzles },
-            { "Action-adventure", ActionAndAdventure },
+            { "Action-Adventure", ActionAndAdventure },
             { "Survival and horror", SurvivalAndHorror }
         };
         

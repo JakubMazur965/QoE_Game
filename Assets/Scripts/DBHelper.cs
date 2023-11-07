@@ -21,13 +21,13 @@ public class DBHelper : MonoBehaviour
         {
             connection.Open();
         
-            string insertQuery = "INSERT INTO Data (name, surname, age, game_device, game_experience, game_frequency, " +
+            string insertQuery = "INSERT INTO Data (name, surname, age, gender, game_device, game_experience, game_frequency, " +
                                  "glasses, processor, processor_cores, graphics_card, memory_size, " +
                                  "internet_connection_type, internet_speed, internet_delay, lvl_response_avg_time," +
                                  "lvl_response_mos, lvl_memorizing_result, lvl_memorizing_mos, lvl_aim_time," +
                                  "lvl_aim_mos, lvl_puzzle_time, lvl_puzzle_mos, system_recommendation, " +
                                  "system_recommendation_all_data, system_recommendation_mos, whole_game_mos) " +
-                                 "VALUES (@name, @surname, @age, @gameDevice, @gameExperience, @gameFrequency," +
+                                 "VALUES (@name, @surname, @age, @gender, @gameDevice, @gameExperience, @gameFrequency," +
                                  "@glasses, @processor, @processorCores, @gpu, @memorySize, @intConType, @intSpeed," +
                                  "@intDelay, @lvlResponseAvgTime, @lvlResponseMos, @lvlMemRes, @lvlMemMos, @lvlAimTime," +
                                  "@lvlAimMos, @lvlPuzzleTime, @lvlPuzzleMos, @sysRec, @sysRecAllData, @sysRecMos," +
@@ -36,6 +36,7 @@ public class DBHelper : MonoBehaviour
             cmd.Parameters.AddWithValue("@name", DataToDbdto.Name);
             cmd.Parameters.AddWithValue("@surname", DataToDbdto.Surname);
             cmd.Parameters.AddWithValue("@age", DataToDbdto.Age);
+            cmd.Parameters.AddWithValue("@gender", DataToDbdto.Gender);
             cmd.Parameters.AddWithValue("@gameDevice", DataToDbdto.GameDevice);
             cmd.Parameters.AddWithValue("@gameExperience", DataToDbdto.GameExperience);
             cmd.Parameters.AddWithValue("@gameFrequency", DataToDbdto.GameFrequency);

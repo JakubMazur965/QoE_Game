@@ -24,7 +24,6 @@ public class CheckSystem : MonoBehaviour
         }
     }
     
-    [Obsolete("Obsolete")]
     IEnumerator MeasureSpeed()
     {
         using (UnityWebRequest www = UnityWebRequest.Get(_url))
@@ -34,11 +33,15 @@ public class CheckSystem : MonoBehaviour
             _stopwatch.Start();
             yield return www.SendWebRequest();
 
-            if (www.isNetworkError || www.isHttpError)
+            if (www.result == UnityWebRequest.Result.ConnectionError)
             {
-                Debug.LogError("Error: " + www.error);
+                Debug.LogError("Network error: " + www.error);
             }
-            else
+            else if (www.result == UnityWebRequest.Result.ProtocolError)
+            {
+                Debug.LogError("HTTP error: " + www.error);
+            }
+            else if (www.isDone)
             {
                 _stopwatch.Stop();
                 long fileSize = (long) www.downloadedBytes;

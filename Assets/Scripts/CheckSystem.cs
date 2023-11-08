@@ -24,6 +24,7 @@ public class CheckSystem : MonoBehaviour
         }
     }
     
+    [Obsolete("Obsolete")]
     IEnumerator MeasureSpeed()
     {
         using (UnityWebRequest www = UnityWebRequest.Get(_url))
@@ -44,6 +45,7 @@ public class CheckSystem : MonoBehaviour
                 float downloadTime = (float) _stopwatch.Elapsed.TotalSeconds;
                 float downloadSpeedMbps = fileSize / downloadTime / 8;
                 DataToDbdto.InternetSpeed = downloadSpeedMbps;
+                Debug.Log(DataToDbdto.InternetSpeed);
             }
         }
     }

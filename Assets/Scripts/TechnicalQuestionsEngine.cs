@@ -87,7 +87,7 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(-1, 5, -2, 4, -5, -5, 4, -5, 2);
                 break;
             case 5:
-                GamesCategoryPointsHelper.AddPoints(4, 5, 5,5, 3,4,2,5,1);
+                GamesCategoryPointsHelper.AddPoints(4, 5, 5,5, 3,4,2,5,2);
                 break;
             case 6:
                 GamesCategoryPointsHelper.AddPoints(3,-2,3,-3,5,3,0,5,0);
@@ -102,19 +102,19 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(5,5,-5,-3,-2,-4,5,-2,4);
                 break;
             case 10:
-                GamesCategoryPointsHelper.AddPoints(3,-3,-2,-5,5,-3,-5,5,4);
+                GamesCategoryPointsHelper.AddPoints(3,-3,-2,-5,5,-3,-5,5,2);
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(4,5,3,0,5,2,5,4,5);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(-2,-2,5,4,-5,5,2,-5,-2);
+                GamesCategoryPointsHelper.AddPoints(-2,-2,5,4,-5,5,2,-5,-4);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(-4,-4,5,4,-5,5,-3,-4,-4);
                 break;
             case 14:
-                GamesCategoryPointsHelper.AddPoints(-2,0,5,5,-3,5,-3,3,1);
+                GamesCategoryPointsHelper.AddPoints(-2,0,5,5,-3,5,-3,3,0);
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(-3,-4,5,5,0,4,1,3,2);
@@ -155,19 +155,19 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(3,4,-3,-1,-1,-2,4,-1,2);
                 break;
             case 10:
-                GamesCategoryPointsHelper.AddPoints(2,-1,-1,-2,3,-1,-4,3,2);
+                GamesCategoryPointsHelper.AddPoints(2,-1,-1,-2,3,-1,-4,3,1);
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(2,3,2,1,2,2,3,2,3);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(-1,-1,3,2,-3,3,3,-3,-1);
+                GamesCategoryPointsHelper.AddPoints(-1,-1,3,2,-3,3,3,-3,-2);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(-2,-2,2,2,-3,3,-1,-1,-2);
                 break;
             case 14:
-                GamesCategoryPointsHelper.AddPoints(0,1,2,3,-1,3,0,2,2);
+                GamesCategoryPointsHelper.AddPoints(0,1,2,3,-1,3,0,2,1);
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(1,0,-1,-1,2,0,3,1,1);
@@ -208,19 +208,19 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(1,3,-1,0,0,-1,2,0,1);
                 break;
             case 10:
-                GamesCategoryPointsHelper.AddPoints(1,1,0,0,-1,1,3,0,1);
+                GamesCategoryPointsHelper.AddPoints(1,1,0,0,-1,1,3,0,0);
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(1,0,1,2,0,1,2,0,0);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(1,1,-2,0,-1,-1,4,0,1);
+                GamesCategoryPointsHelper.AddPoints(1,1,-2,0,-1,-1,4,0,0);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(0,1,-3,-1,0,-1,1,0,0);
                 break;
             case 14:
-                GamesCategoryPointsHelper.AddPoints(1,2,0,0,0,-1,3,1,3);
+                GamesCategoryPointsHelper.AddPoints(1,2,0,0,0,-1,3,1,1);
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(1,0,-1,-1,2,0,3,1,1);
@@ -261,19 +261,19 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(0,0,2,1,1,0,-1,1,0);
                 break;
             case 10:
-                GamesCategoryPointsHelper.AddPoints(0,3,2,4,-3,2,4,-3,0);
+                GamesCategoryPointsHelper.AddPoints(0,3,2,4,-3,2,4,-3,-1);
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(-1,-3,0,3,-2,1,0,-1,-3);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(2,2,-4,-1,3,-3,3,3,3);
+                GamesCategoryPointsHelper.AddPoints(2,2,-4,-1,3,-3,3,3,2);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(3,3,-4,-2,3,-3,3,2,2);
                 break;
             case 14:
-                GamesCategoryPointsHelper.AddPoints(2,3,-2,-2,1,-2,4,0,3);
+                GamesCategoryPointsHelper.AddPoints(2,3,-2,-2,1,-2,4,0,2);
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(3,3,-2,-3,3,-1,4,0,1);
@@ -314,19 +314,19 @@ public class TechnicalQuestionsEngine : MonoBehaviour
                 GamesCategoryPointsHelper.AddPoints(-2,-1,5,3,2,4,-3,2,-2);
                 break;
             case 10:
-                GamesCategoryPointsHelper.AddPoints(-2,4,3,5,-5,3,5,-5,-1);
+                GamesCategoryPointsHelper.AddPoints(-2,4,3,5,-5,3,5,-5,-2);
                 break;
             case 11:
                 GamesCategoryPointsHelper.AddPoints(-2,-5,-1,4,-4,0,-2,-3,-5);
                 break;
             case 12:
-                GamesCategoryPointsHelper.AddPoints(4,4,-5,-3,5,-5,2,5,5);
+                GamesCategoryPointsHelper.AddPoints(4,4,-5,-3,5,-5,2,5,4);
                 break;
             case 13:
                 GamesCategoryPointsHelper.AddPoints(5,5,-5,-4,5,-5,5,4,4);
                 break;
             case 14:
-                GamesCategoryPointsHelper.AddPoints(4,4,-5,-4,3,-4,5,-2,4);
+                GamesCategoryPointsHelper.AddPoints(4,4,-5,-4,3,-4,5,-2,3);
                 break;
             case 15:
                 GamesCategoryPointsHelper.AddPoints(4,5,-5,-5,4,-2,5,0,0);

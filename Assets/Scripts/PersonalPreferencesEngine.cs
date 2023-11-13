@@ -60,7 +60,7 @@ public class PeronalPreferencesEngine : MonoBehaviour
                 questionText.text = "Q14: In games, the most important thing is competition with others. [Involvement]";
                 break;
             case 15:
-                questionText.text = "Q15: Games must evoke many emotions in me, both positive and negative fear. [Absorption] [Flow]";
+                questionText.text = "Q15: Games have to evoke a lot of emotions in me, I like it when they are not just positive ones, such as fear. [Absorption] [Flow]";
                 break;
             case 16:
                 questionText.text = "";

@@ -47,8 +47,7 @@ public class CheckSystem : MonoBehaviour
                 long fileSize = (long) www.downloadedBytes;
                 float downloadTime = (float) _stopwatch.Elapsed.TotalSeconds;
                 float downloadSpeedMbps = fileSize / downloadTime / 8;
-                DataToDbdto.InternetSpeed = downloadSpeedMbps;
-                Debug.Log(DataToDbdto.InternetSpeed);
+                DataToDbdto.InternetSpeed = downloadSpeedMbps; 
             }
         }
     }

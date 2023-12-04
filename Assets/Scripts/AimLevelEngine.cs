@@ -38,7 +38,7 @@ public class AimLevelEngine : MonoBehaviour
         _timer = 0f;
     }
     
-    private IEnumerator StartTimer()
+    private IEnumerator StartScore()
     {
         while (true)
         {
@@ -47,7 +47,7 @@ public class AimLevelEngine : MonoBehaviour
         }
     }
     
-    private IEnumerator StartScore()
+    private IEnumerator StartTimer()
     {
         while (true)
         {
@@ -73,8 +73,8 @@ public class AimLevelEngine : MonoBehaviour
         scoreTextGameObject.SetActive(true);
 
         StartCoroutine(GeneratePointsCoroutine());
-        _timerCoroutine = StartCoroutine(StartTimer());
-        _scoreCoroutine = StartCoroutine(StartScore());
+        _timerCoroutine = StartCoroutine(StartScore());
+        _scoreCoroutine = StartCoroutine(StartTimer());
     }
 
     private IEnumerator GeneratePointsCoroutine()
